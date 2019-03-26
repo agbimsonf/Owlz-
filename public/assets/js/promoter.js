@@ -33,31 +33,26 @@ $(function() {
         var id = $(this).data("id");
         var first_name =  $("#firstName").val().trim();
         var last_name = $("#lastName").val().trim();
+        var handle = $("#handle").val().trim();
+        var about = $("#about").val().trim();
+        var city = $("#city").val().trim();
+        var language = $("#language").val().trim();
         var phone_number= $("#phone").val().trim();
         var email= $("#email").val().trim();
+        var insta = $("#insta").val().trim();
 
-        if (first_name === ""){
-          first_name = $(this).data("first_name");
-          console.log(first_name);
-        } 
-        if (last_name === ""){
-          last_name = $(this).data("last_name");
-        } 
-
-        if (phone_number === ""){
-          phone_number = $(this).data("phone");
-        } 
-
-        if (email === ""){
-          email = $(this).data("email");
-        }
         
         var updatedPromoter = {
           id: id,
           first_name: first_name,
           last_name: last_name,
+          handle:handle,
+          about:about,
+          city:city,
+          language:language,
           phone_number: phone_number,
-          email: email
+          email: email,
+          instagram:insta
         };
 
         console.log(updatedPromoter);
