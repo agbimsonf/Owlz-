@@ -31,22 +31,6 @@ $(function() {
         var phone_number= $("#phone").val().trim();
         var email= $("#email").val().trim();
 
-        if (first_name === ""){
-          first_name = $(this).data("first_name");
-          console.log(first_name);
-        } 
-        if (last_name === ""){
-          last_name = $(this).data("last_name");
-        } 
-
-        if (phone_number === ""){
-          phone_number = $(this).data("phone");
-        } 
-
-        if (email === ""){
-          email = $(this).data("email");
-        }
-        
         var updatedClient = {
           id: id,
           first_name: first_name,
