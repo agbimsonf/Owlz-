@@ -1,0 +1,50 @@
+<h2>Hello {{promoter.first_name}}</h2>
+
+<ul>
+    <li>{{promoter.first_name}}</li> 
+    <li>{{promoter.last_name}}</li>
+    <li>{{promoter.phone_number}}</li>
+    <li>{{promoter.email}}</li>
+</ul>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Update your Promoter Profile
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update your Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="create-form">
+            <div class="form-group">
+                <label>First name</label>
+                <input type="text" id="firstName" placeholder="{{promoter.first_name}}">
+            </div>
+                <div class="form-group">
+                <label>Last name</label>
+                <input type="text" id="lastName" placeholder="{{promoter.last_name}}">
+            </div>
+                <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="{{promoter.phone_number}}">
+            </div>
+                <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="{{promoter.email}}">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="updateClient" type="button" data-id="{{promoter.id}}" data-first_name="{{promoter.first_name}}" data-last_name="{{promoter.last_name}}" data-phone="{{promoter.phone_number}}" data-email="{{promoter.email}}" >Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

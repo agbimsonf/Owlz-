@@ -15,4 +15,10 @@ module.exports = function(app) {
   app.get("/indexClient", function(req, res) {
     res.render(path.join(__dirname, "../views/updateClient.handlebars"));
   });
+  app.get("/registerpromoter", function(req, res) {
+    res.render(path.join(__dirname, "../views/registrationPromoter.handlebars"));
+  });
+  app.get("/promoter", function(req, res) {
+    res.render(path.join(__dirname, "../views/indexPromoter.handlebars"));
+  });
 };
