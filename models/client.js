@@ -29,15 +29,6 @@ module.exports = function(sequelize, DataTypes) {
         }
       }
     });
-
-    Client.associate = function(models) {
-        // Associating Client with Search
-        // When an Client is deleted, also delete any associated Searchs
-        Client.hasMany(models.Search, {
-          onDelete: "cascade"
-        }); 
-      };
-    
     return Client;
   };
   
