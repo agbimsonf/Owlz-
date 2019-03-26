@@ -19,23 +19,28 @@ module.exports = function(app) {
     }); 
 
   // Get route for retrieving a single Promoter
-  app.get("/api/clients/:id", function(req, res) {
+  app.get("/api/promoters/:id", function(req, res) {
     db.Promoter.findOne({
       where:{
         id: req.params.id
       }
     }).then(function(dbPromoter){
-      res.render('indexPromoter',{ client: dbPromoter });
+      res.render('indexPromoter',{ promoter: dbPromoter });
     })
   });
      
   // Post route for Create the Promoter
-  app.post("/api/clients", function(req, res) {
+  app.post("/api/promoters", function(req, res) {
     db.Promoter.create({
       first_name: req.body.first_name,
       last_name: req.body.last_name,
+      handle:req.body.handle,
+      descriptions:req.body.about,
+      city:req.body.city,
+      languages:req.body.language,
       phone_number: req.body.phone_number,
-      email: req.body.email
+      email: req.body.email,
+      instagram:req.body.instagram
     },{
       where:{
         id: req.body.id
@@ -46,12 +51,17 @@ module.exports = function(app) {
   });
 
   // PUT route for updating Promoter
-  app.put("/api/clients/", function(req, res) {
+  app.put("/api/promoters/", function(req, res) {
     db.Promoter.update({
       first_name: req.body.first_name,
       last_name: req.body.last_name,
+      handle:req.body.handle,
+      descriptions:req.body.about,
+      city:req.body.city,
+      languages:req.body.language,
       phone_number: req.body.phone_number,
-      email: req.body.email
+      email: req.body.email,
+      instagram:req.body.instagram
     }, {
       where: {
         id: req.body.id

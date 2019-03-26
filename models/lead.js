@@ -1,10 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Search = sequelize.define("Search", {
-      city: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-        len: [1,30]
-      },
+    var Lead = sequelize.define("Lead", {
       start_date: {
         type: DataTypes.DATE,
         allowNull: false,
@@ -19,12 +14,19 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-      interests: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        len: [1,30]
+      occasion:{
+        type: DataTypes.TEXT,
+        allowNull: false, 
+      },
+      message:{
+        type: DataTypes.TEXT,
+        allowNull: false,  
+      },
+      email_client:{
+        type: DataTypes.TEXT,
+        allowNull: false,  
       },
     });
-    return Search;
+    return Lead;
   };
   

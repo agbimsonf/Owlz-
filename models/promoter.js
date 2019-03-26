@@ -47,9 +47,7 @@ module.exports = function(sequelize, DataTypes) {
       },
     });
     Promoter.associate = function(models) {
-        // Associating Promoter with Message
-        // When an Promoter is deleted, also delete any associated Message
-        Promoter.hasMany(models.Search, {
+        Promoter.hasMany(models.Lead, {
           onDelete: "cascade",
         });
       };
