@@ -24,46 +24,34 @@
       <div class="modal-body">
         <form class="create-form">
             <div class="form-group">
-                <label>First name</label>
-                <input type="text" id="firstName" value="{{promoter.first_name}}">
+                <label>Start date</label>
+                <input type="date" id="start_date">
             </div>
                 <div class="form-group">
-                <label>Last name</label>
-                <input type="text" id="lastName" value="{{promoter.last_name}}">
+                <label>End date</label>
+                <input type="date" id="end_date">
             </div>
               <div class="form-group">
-                <label>Handle</label>
-                <input type="text" id="handle" value="{{promoter.handle}}">
+                <label>Number of guests</label>
+                <input type="number" id="guests">
             </div>
               <div class="form-group">
-                <label>About</label>
-                <input type="text" id="about" value="{{promoter.descriptions}}">
+                <label>Occasion</label>
+                <input type="text" id="occasion">
             </div>
               <div class="form-group">
-                <label>City</label>
-                <input type="text" id="city" value="{{promoter.city}}">
-            </div>
-                <div class="form-group">
-                <label>Language</label>
-                <input type="text" id="language" value="{{promoter.languages}}">
-            </div>
-                <div class="form-group">
-                <label>Phone Number</label>
-                <input type="text" id="phone" value="{{promoter.phone_number}}">
+                <label>Message</label>
+                <input type="text" id="message">
             </div>
                 <div class="form-group">
                 <label>Email</label>
-                <input type="email" id="email" value="{{promoter.email}}">
-            </div>
-              <div class="form-group">
-                <label>Instagram</label>
-                <input type="text" id="insta" value="{{promoter.instagram}}">
+                <input type="email" id="email_client">
             </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="updatePromoter" type="button" data-id="{{promoter.id}}">Save changes</button>
+        <button class="contactPromoter btn btn-primary" type="button" data-id="{{this.id}}">Save changes</button>
       </div>
     </div>
   </div>
