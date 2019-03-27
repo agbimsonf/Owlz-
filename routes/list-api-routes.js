@@ -9,12 +9,17 @@
 var db = require("../models");
 
 // Routes
-// =============================================================
+//  =============================================================
 module.exports = function(app) {
-  // Message route for saving a new message
-  app.post("/api/searchs", function(req, res) {
-    db.Message.create(req.body).then(function(dbMessage) {
-      res.json(dbMessage);
+  // Post route for getting all of the Promoter
+    app.get("/listPromoter/:city", function(req, res) {
+        db.Promoter.findAll({
+            where:{
+                city: req.params.city
+            }
+        }).then(function(dbPromoter) {
+            res.render('listPromoter',{ promoters: dbPromoter });
+         });
     });
-  });
 };
+
