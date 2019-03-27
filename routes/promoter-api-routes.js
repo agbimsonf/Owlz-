@@ -11,12 +11,12 @@ var db = require("../models");
 // Routes
 //  =============================================================
 module.exports = function(app) {
-  // GET route for getting all of the Promoter
-  app.get("/", function(req, res) {
-      db.Promoter.findAll({}).then(function(dbPromoter) {
-        res.render("indexPromoter", { clients: dbPromoter });
-      });
-    }); 
+  // // GET route for getting all of the Promoter
+  // app.get("/", function(req, res) {
+  //     db.Promoter.findAll({}).then(function(dbPromoter) {
+  //       res.render("indexPromoter", { clients: dbPromoter });
+  //     });
+  //   }); 
 
   // Get route for retrieving a single Promoter
   app.get("/api/promoters/:id", function(req, res) {

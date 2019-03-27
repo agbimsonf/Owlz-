@@ -11,12 +11,12 @@ var db = require("../models");
 // Routes
 // =============================================================
 module.exports = function(app) {
-  // GET route for getting all of the Client
-  app.get("/", function(req, res) {
-      db.Client.findAll({}).then(function(dbClient) {
-        res.render("registrationClient", { clients: dbClient });
-      });
-    }); 
+  // // GET route for getting all of the Client
+  // app.get("/", function(req, res) {
+  //     db.Client.findAll({}).then(function(dbClient) {
+  //       res.render("registrationClient", { clients: dbClient });
+  //     });
+  //   }); 
 
   // Get route for retrieving a single Client
   app.get("/api/clients/:id", function(req, res) {
