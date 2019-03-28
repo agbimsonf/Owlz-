@@ -11,10 +11,22 @@
     <li>{{promoter.email}}</li>
     <li>{{promoter.instagram}}</li>
 </ul>
+
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Update Profile
 </button>
+
+{{#each leads}}
+<h1>Lead</h1>
+  <li>{{this.message}}</li>
+  <li>{{this.start_date}}</li>
+  <li>{{this.end_date}}</li>
+  <li>{{this.guests}}</li>
+  <li>{{this.occasion}}</li>
+  <li>{{this.email_client}}</li>
+{{/each}}
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

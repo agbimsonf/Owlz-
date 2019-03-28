@@ -30,6 +30,7 @@ app.set("view engine", "handlebars");
 // Routes
 // =============================================================
 require("./routes/list-api-routes.js")(app);
+require("./routes/lead-api-routes.js")(app);
 require("./routes/client-api-routes.js")(app);
 require("./routes/promoter-api-routes.js")(app);
 require("./routes/html-routes.js")(app);

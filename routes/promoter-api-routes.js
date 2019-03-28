@@ -11,13 +11,6 @@ var db = require("../models");
 // Routes
 //  =============================================================
 module.exports = function(app) {
-  // // GET route for getting all of the Promoter
-  // app.get("/", function(req, res) {
-  //     db.Promoter.findAll({}).then(function(dbPromoter) {
-  //       res.render("indexPromoter", { clients: dbPromoter });
-  //     });
-  //   }); 
-
   // Get route for retrieving a single Promoter
   app.get("/api/promoters/:id", function(req, res) {
     db.Promoter.findOne({
@@ -25,7 +18,13 @@ module.exports = function(app) {
         id: req.params.id
       }
     }).then(function(dbPromoter){
-      res.render('indexPromoter',{ promoter: dbPromoter });
+      db.Lead.findAll({
+        where:{
+           PromoterId: req.params.id 
+        }
+    }).then(function(dbLead) {
+        res.render('indexPromoter',{ promoter: dbPromoter , leads: dbLead});
+     });
     })
   });
      
@@ -41,7 +40,7 @@ module.exports = function(app) {
       phone_number: req.body.phone_number,
       email: req.body.email,
       instagram:req.body.instagram
-    },{
+  },{
       where:{
         id: req.body.id
       }
