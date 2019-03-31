@@ -387,9 +387,9 @@ color: transparent;
     color: #777;
 }
   
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
-    /* show 3 items */
+    /* show 3 items *//*
     .carouselPrograms .carousel-inner .active,
     .carouselPrograms .carousel-inner .active + .carousel-item,
     .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
@@ -417,7 +417,7 @@ color: transparent;
         visibility: visible;
     }
 
-    /* left or forward direction */
+    /* left or forward direction *//*
     .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
     .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
@@ -427,7 +427,7 @@ color: transparent;
         visibility: visible;
     }
 
-    /* farthest right hidden item must be abso position for animations */
+    /* farthest right hidden item must be abso position for animations *//*
     .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
         top: 0;
@@ -437,7 +437,7 @@ color: transparent;
         visibility: visible;
     }
 
-    /* right or prev direction */
+    /* right or prev direction *//*
     .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
     .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
@@ -448,7 +448,7 @@ color: transparent;
         display: block;
         visibility: visible;
     }
-}
+} */
 
 .styled-select {
     background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 100% .50;
@@ -485,6 +485,10 @@ color: transparent;
 
  .black select  { 
     border: 1px solid #ccc;
-    color: #000; 
-    
+    color: #000;    
 }
+
+/* gallery carousel */
+
+  /* end of gallery carousel */
+  
