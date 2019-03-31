@@ -69,3 +69,16 @@ $(function() {
 
     });
 });
+
+  $('#upload_widget').cloudinary_upload_widget({ cloudName: "gsafl", uploadPreset: "m48qyart", sources: [ 'local', 'url', 'instagram']},(error, result) => {
+    if (result && result.event === "success") {
+      result = {
+        event: "upload-added",
+        info: {
+          
+          file: {},
+          publicId: "public-id" }
+        
+    };console.log(result)
+    }
+  });
