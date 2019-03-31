@@ -63,7 +63,7 @@
                     <div class="card-body">
                         <div class="row">
                                 <div class="col-3 text-left">
-                                    <img src="/assets/images/aboutPhotos/Purple-Weekend.jpg" alt="profile photo" class="profilePhoto">
+                                    <img src="/assets/images/profile.png" alt="profile photo" class="profilePhoto">
                                     <br>
                                     <br>
                                     <h5>email: {{this.email}}</h5>
@@ -77,11 +77,11 @@
                                 <h5>name: {{this.first_name}} {{this.last_name}}</h5>
                                 <h5>about: </h5> 
                                 <p>{{this.descriptions}}</p>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal{{this.id}}">
                                   Contact Me
                                 </button>
                             </div>
-                            
+                          
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
         <br>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal{{this.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -107,33 +107,33 @@
         <form class="create-form">
             <div class="form-group">
                 <label>Start date</label>
-                <input type="date" id="start_date">
+                <input type="date" id="start_date{{this.id}}">
             </div>
                 <div class="form-group">
                 <label>End date</label>
-                <input type="date" id="end_date">
+                <input type="date" id="end_date{{this.id}}">
             </div>
               <div class="form-group">
                 <label>Number of guests</label>
-                <input type="number" id="guests">
+                <input type="number" id="guests{{this.id}}">
             </div>
               <div class="form-group">
                 <label>Occasion</label>
-                <input type="text" id="occasion">
+                <input type="text" id="occasion{{this.id}}">
             </div>
               <div class="form-group">
                 <label>Message</label>
-                <input type="text" id="message">
+                <input type="text" id="message{{this.id}}">
             </div>
                 <div class="form-group">
                 <label>Email</label>
-                <input type="email" id="email_client">
+                <input type="email" id="email_client{{this.id}}">
             </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="contactPromoter btn btn-dark" type="button" data-id="{{this.id}}">Send</button>
+        <button class="contactPromoter btn btn-dark" type="button" data-id="{{this.id}}" data-dismiss="modal">Send</button>
       </div>
     </div>
   </div>

@@ -449,3 +449,34 @@ color: transparent;
         visibility: visible;
     }
 }
+
+.styled-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px; 
+    width: 268px;
+}
+
+.rounded {
+    -webkit-border-radius: 25px!important;
+    -moz-border-radius: 25px!important;
+    border-radius: 25px!important;
+ }
+
+ select {
+    border-radius: 25px;
+}
+
+ .black{
+    background-color: #fff;
+    border-color: #F6F7F8;
+    border-radius: 25px;
+ }
+
+ .black select  { 
+    border: 1px solid #ccc;
+    color: #000; 
+    border-radius: 25px;
+}
