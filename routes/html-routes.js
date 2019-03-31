@@ -24,7 +24,16 @@ module.exports = function(app) {
   app.get("/registerpromoter", function(req, res) {
     res.render(path.join(__dirname, "../views/registrationPromoter.handlebars"));
   });
-  app.get("/promoter", function(req, res) {
+  app.get("/promoters/", function(req, res) {
     res.render(path.join(__dirname, "../views/indexPromoter.handlebars"));
+  });
+  app.get("/login", function(req, res) {
+    res.render(path.join(__dirname, "../views/loginPromoter.handlebars"));
+  });
+  app.get("/about", function(req, res) {
+    res.render(path.join(__dirname, "../views/about.handlebars"));
+  });
+  app.get("/contact", function(req, res) {
+    res.render(path.join(__dirname, "../views/contact.handlebars"));
   });
 };

@@ -27,7 +27,9 @@ $(".contactPromoter").on("click", function(event) {
     }).then(
       function(dbleads) {
         console.log("updated", dbleads);
-        window.location.href = `/`;
+        //window.location.href = `/`;
+        alert("Your message has been sent")
+        //location.reload();
       }
     );
 

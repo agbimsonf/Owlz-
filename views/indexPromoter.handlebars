@@ -1,31 +1,90 @@
-<h2>Hello {{promoter.first_name}}</h2>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+          <img src="/assets/images/logo.png" alt="Owlz" id="logo">
+      </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">about us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">contact us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          liaison
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/login">log in</a>
+          <a class="dropdown-item" href="/registerpromoter">register</a>
+        </div>
+      </li>
+    </ul>
+    <h3 class="slogan">stay connected</h3>
+  </div>
+</nav>
+<!-- end of navbar -->
 
-<ul>
-    <li>{{promoter.first_name}}</li> 
-    <li>{{promoter.last_name}}</li>
-    <li>{{promoter.handle}}</li>
-    <li>{{promoter.descriptions}}</li>
-    <li>{{promoter.city}}</li>
-    <li>{{promoter.languages}}</li>
-    <li>{{promoter.phone_number}}</li>
-    <li>{{promoter.email}}</li>
-    <li>{{promoter.instagram}}</li>
-</ul>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Update Profile
-</button>
-
-{{#each leads}}
-<h1>Lead</h1>
-  <li>{{this.message}}</li>
-  <li>{{this.start_date}}</li>
-  <li>{{this.end_date}}</li>
-  <li>{{this.guests}}</li>
-  <li>{{this.occasion}}</li>
-  <li>{{this.email_client}}</li>
-{{/each}}
+<div class="background">
+<br>
+    <h1 class="text-center">hello {{promoter.first_name}}</h1>
+<br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="aboutus">
+                        <h2 class="text-center who">your profile</h2>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <ul>
+                              <li>first name: </li> 
+                              <li>last name: </li>
+                              <li>handle: </li>
+                              <li>about me: </li>
+                              <li>city: </li>
+                              <li>language: </li>
+                              <li>phone: </li>
+                              <li>email: </li>
+                              <li>@instagram: </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                              <li>{{promoter.first_name}}</li> 
+                              <li>{{promoter.last_name}}</li>
+                              <li>{{promoter.handle}}</li>
+                              <li>{{promoter.descriptions}}</li>
+                              <li>{{promoter.city}}</li>
+                              <li>{{promoter.languages}}</li>
+                              <li>{{promoter.phone_number}}</li>
+                              <li>{{promoter.email}}</li>
+                              <li>{{promoter.instagram}}</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                        Update
+                      </button>                            
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                        <img class="purple mx-auto d-block" src="/assets/images/profile.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr class="style-eight">
+        <br>
 
 
 <!-- Modal -->
@@ -85,8 +144,53 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="updatePromoter" type="button" data-id="{{promoter.id}}">Save changes</button>
+        <button class="updatePromoter btn-lg btn-dark" type="button" data-id="{{promoter.id}}">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+
+{{!-- leads --}}
+<h2 class="text-center who">leads</h2>
+{{#each leads}}
+<div class="container">
+  <div class="card">
+  <div class="card-body">
+    <h3>message date: </h3>- {{this.createdAt}}
+    <br><br>
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="lead">
+            <li>message: </li>
+            <li>start date: </li>
+            <li>end date: </li>
+            <li>no. of guests: </li>
+            <li>occasion: </li>
+            <li>email: </li>
+          </ul>
+        </div>
+        <div class="col-md-10">
+          <ul class="lead">
+            <li>{{this.message}}</li>
+            <li>{{this.start_date}}</li>
+            <li>{{this.end_date}}</li>
+            <li>{{this.guests}}</li>
+            <li>{{this.occasion}}</li>
+            <li>{{this.email_client}}</li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn btn-dark"><a href="mailto:{{this.email_client}}?Subject=OWLZ%20Contact" target="_top" class="lead-button">contact lead</a></button>
+    </div>
+    </div>
+</div>
+{{/each}}
+
+<div class="social-area">end of leads</div>
+
+
+<!-- footer-->
+<footer class="text-center">
+        ©2019 Owlz
+    </footer>
+<!-- end of footer -->

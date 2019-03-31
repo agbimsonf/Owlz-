@@ -1,7 +1,6 @@
-<h1>list</h1>
 
 <div id="list">
-    {{#each promoters}}
+    {{!-- {{#each promoters}}
     <ul>
         <li>{{this.first_name}}</li>
         <li>{{this.city}}</li>
@@ -18,6 +17,81 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Contact
 </button>
+{{/each}} --}}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">
+          <img src="/assets/images/logo.png" alt="Owlz" id="logo">
+      </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">about us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">contact us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          liaison
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/login">log in</a>
+          <a class="dropdown-item" href="/registerpromoter">register</a>
+        </div>
+      </li>
+    </ul>
+    <h3 class="slogan">stay connected</h3>
+  </div>
+</nav>
+<br>
+<br>
+<!-- end of navbar -->
+<h1 class="text-center">search results</h1>
+<br>
+{{#each promoters}}
+<div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                                <div class="col-3 text-left">
+                                    <img src="/assets/images/aboutPhotos/Purple-Weekend.jpg" alt="profile photo" class="profilePhoto">
+                                    <br>
+                                    <br>
+                                    <h5>email: {{this.email}}</h5>
+                                    <h5>languages: {{this.languages}}</h5>
+                                    <a href="https://www.instagram.com/{{this.instagram}}"><i class="fab fa-instagram fa-2x"></i></a>
+                                    {{!-- <i class="fab fa-twitter-square fa-2x"></i> --}}
+                                </div>                                    
+                            <div class="col-9">
+                                <h3 class="card-title">handle: {{this.handle}}</h3>
+                                <h5>city: {{this.city}} </h5>
+                                <h5>name: {{this.first_name}} {{this.last_name}}</h5>
+                                <h5>about: </h5> 
+                                <p>{{this.descriptions}}</p>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                                  Contact Me
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="style-eight">
+  
+        <br>
+        <br>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -59,10 +133,16 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="contactPromoter btn btn-primary" type="button" data-id="{{this.id}}">Save changes</button>
+        <button class="contactPromoter btn btn-dark" type="button" data-id="{{this.id}}">Send</button>
       </div>
     </div>
   </div>
 </div>
-    {{/each}}
+{{/each}}
 </div>
+
+<!-- footer-->
+<footer class="text-center">
+        ©2019 Owlz
+    </footer>
+<!-- end of footer -->
