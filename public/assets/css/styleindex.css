@@ -387,7 +387,7 @@ color: transparent;
     color: #777;
 }
   
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
 
     /* show 3 items */
     .carouselPrograms .carousel-inner .active,
@@ -448,7 +448,7 @@ color: transparent;
         display: block;
         visibility: visible;
     }
-}
+} 
 
 .styled-select {
     background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 100% .50;
@@ -485,6 +485,10 @@ color: transparent;
 
  .black select  { 
     border: 1px solid #ccc;
-    color: #000; 
-    
+    color: #000;    
 }
+
+/* gallery carousel */
+
+  /* end of gallery carousel */
+  
