@@ -1,0 +1,451 @@
+html {
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; 
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-bottom: 60px;
+    line-height: 1.5;    
+}
+
+.social-area{
+    margin-bottom: 25px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%; 
+    height: 60px;
+    line-height: 60px;
+    background-color:  black;
+    color: white;
+    font-size: 12px;
+}
+
+.navbar {
+    position: relative;
+    height: 90px;
+}
+
+#logo {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  
+    display: inline-block;
+    top: 5px;
+}
+
+.promoterLogin{
+    font-size:20px;
+}
+
+ul.lead {
+    list-style-type: none;
+  }
+
+a.lead-button:link{
+    color:white
+}
+
+.slogan {
+    position: absolute;
+    right: 40px;
+}
+
+.slogan {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+  }
+
+a:link{
+    color: #212529;
+}
+
+a:hover{
+    color: #212529;
+}
+
+a:visited{
+    color: #212529;
+}
+
+#where{
+    border-radius: 25px;
+}
+  
+/*   
+.slogan .letter {
+    display: inline-block;
+    line-height: 1em;
+}  */
+
+header {
+	background-image: url("../images/miami_bw.jpg");
+    height: 430px;
+}
+
+/* .btn {
+    color: white;
+    font-weight: 500;
+    background-color:black;
+} */
+/* 
+.input {
+    padding-top: 140px;
+} */
+
+h1 h2 h3 h4 h5 {
+    letter-spacing: 0.1em;
+}
+#carousel {
+    margin-bottom: 80px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.img-fluid:hover {
+    
+}
+
+.labels {
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    font-weight: 900;*/
+    font-size: 28px; 
+    color: black;
+    text-shadow: 1px 1px 2px rgb(165, 162, 164);
+    font-weight: 500px;
+}
+
+/* .labels {
+    font-weight: 900;
+} */
+
+.social {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+
+/* input{
+    border-radius: 50px;
+    } */
+
+/* #submitButton {
+    border-radius: 50px;
+} */
+
+input.empty {
+    /* 
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: inherit; */
+  padding-left: 15px;
+  font-size: 20px;
+  line-height:40px;
+  width: 250px;
+  border:30px black;
+  border-radius: 500px;
+  font-family: FontAwesome;
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300px;
+}
+
+.purple {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 420px;
+}
+
+.yacht {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 515px;
+    height: 400px;
+}
+
+.purple:hover {
+    opacity: 0.7;
+}
+
+.yacht:hover {
+    opacity: 0.7;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.thesteps  {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+}
+
+.who  {
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .background {
+    background-image: url("../images/y-background.jpg");
+    background-size: contain;
+} */
+
+hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font: 14px Georgia, serif;
+    }
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.dashboard {
+    background-image: url("../images/y-background.jpg");
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.profilePhoto {
+   border-radius: 5px; 
+   width: 200px;
+}
+
+p { margin:0 }
+
+/* .register {
+    background-image: url("../images/stars.jpeg");
+    background-size: contain;
+} */
+
+/* .label {
+    padding: 5px;
+    margin-bottom: 200px;
+} */
+
+.btn {
+    width: 120px;
+}
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+  }
+  
+
+.card-signin {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-img-left {
+    width: 45%;
+    background: scroll center url("../images/skyline.jpg");
+    background-size: cover;
+}
+
+.card-signin .card-body {
+    padding: 2rem;
+}
+
+.form-signin {
+    width: 100%;
+}
+
+.form-signin .btn {
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    padding: 8px;
+    transition: all 0.2s;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group input {
+    height: auto;
+    border-radius: 2rem;
+}
+
+option {
+    height: auto;
+    border-radius: 2rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+}
+  
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carouselPrograms .carousel-inner .active,
+    .carouselPrograms .carousel-inner .active + .carousel-item,
+    .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carouselPrograms .carousel-inner .carousel-item-next,
+    .carouselPrograms .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}

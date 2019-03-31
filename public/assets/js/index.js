@@ -1,8 +1,9 @@
 $("#where").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
-       var city = $("#city").val().trim();
+       var search = $("#city").val().trim();
+       var city = search.split(",",1)
+       console.log(city)
     // Send the GET request.
     $.ajax("/listPromoter/"+ city , {
         type: "GET",

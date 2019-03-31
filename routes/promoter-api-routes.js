@@ -12,7 +12,7 @@ var db = require("../models");
 //  =============================================================
 module.exports = function(app) {
   // Get route for retrieving a single Promoter
-  app.get("/api/promoters/:id", function(req, res) {
+  app.get("/promoters/:id", function(req, res) {
     db.Promoter.findOne({
       where:{
         id: req.params.id
@@ -21,7 +21,10 @@ module.exports = function(app) {
       db.Lead.findAll({
         where:{
            PromoterId: req.params.id 
-        }
+        },
+        order:[
+          ['createdAt','DESC']
+        ],
     }).then(function(dbLead) {
         res.render('indexPromoter',{ promoter: dbPromoter , leads: dbLead});
      });

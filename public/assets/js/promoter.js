@@ -23,7 +23,7 @@ $(function() {
         }).then(
             function(dbPromoter) {
             console.log("added new Promoter");  
-            window.location.href = `/api/promoters/${dbPromoter.id}`;
+            window.location.href = `/promoters/${dbPromoter.id}`;
             }
         );
     });

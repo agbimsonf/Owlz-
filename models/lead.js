@@ -1,12 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
     var Lead = sequelize.define("Lead", {
       start_date: {
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         allowNull: false,
         len: [1,30]
       },
       end_date: {
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         allowNull: false,
         len: [1,30]
       },
