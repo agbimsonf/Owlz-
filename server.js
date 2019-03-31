@@ -5,6 +5,8 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
+var Handlebars = require("handlebars");
+var MomentHandler = require("handlebars.moment");
 
 // Sets up the Express App
 //  =============================================================
@@ -26,6 +28,10 @@ var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+// Set Moment JS
+
+MomentHandler.registerHelpers(Handlebars);
 
 // Routes
 // =============================================================

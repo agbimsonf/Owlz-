@@ -449,3 +449,42 @@ color: transparent;
         visibility: visible;
     }
 }
+
+.styled-select {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 100% .50;
+    height: 50px;
+    overflow: hidden;
+    width: 268px;
+    border-radius: 25px!important;
+    -webkit-border-radius: 25px!important;
+    -moz-border-radius: 25px!important;
+    
+}
+
+.rounded{
+    border-radius: 25px!important;
+}
+
+.styled-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 50px;
+    padding: 5px; 
+    width: 268px;
+    border-radius: 25px!important;
+    -webkit-border-radius: 25px!important;
+    -moz-border-radius: 25px!important;
+}
+
+ .black{
+    background-color: #fff;
+    border-color: #F6F7F8;
+    
+ }
+
+ .black select  { 
+    border: 1px solid #ccc;
+    color: #000; 
+    
+}

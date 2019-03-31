@@ -117,16 +117,21 @@
             </div>
               <div class="form-group">
                 <label>City</label>
-                <select id="city" name="city" value="{{promoter.city}}">
-                  <option value="Miami">Miami</option>
-                  </select>
+                <div class="styled-select black">
+                  <select id="city" name="city" value="{{promoter.city}}">
+                    <option value="Miami">Miami</option>
+                    <option value="New York">New York</option>
+                    </select>
+                </div>
             </div>
                 <div class="form-group">
                 <label>Language</label>
-                <select id="language" name="language" value="{{promoter.languages}}">
-                  <option value="english">English</option>
-                  <option value="spanish">Spanish</option>
-                  </select>
+                <div class="styled-select black">
+                  <select id="language" name="language" value="{{promoter.languages}}">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    </select>
+                </div>
             </div>
                 <div class="form-group">
                 <label>Phone Number</label>
@@ -152,11 +157,12 @@
 
 {{!-- leads --}}
 <h2 class="text-center who">leads</h2>
+<br>
 {{#each leads}}
 <div class="container">
   <div class="card">
   <div class="card-body">
-    <h3>message date: </h3>- {{this.createdAt}}
+    <h3>message date: </h3>{{moment this.createdAt "LLL"}}
     <br><br>
       <div class="row">
         <div class="col-md-2">
@@ -186,7 +192,8 @@
 </div>
 {{/each}}
 
-<div class="social-area">end of leads</div>
+<div class="social-area text-center">end of leads</div>
+<br><br>
 
 
 <!-- footer-->
