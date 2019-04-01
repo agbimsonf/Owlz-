@@ -1,4 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
+var profile_pic = "";
+
 $(function() {
     $("#CreatePromoter").on("click", function(event) {
         // Make sure to preventDefault on a submit event.
@@ -14,6 +16,7 @@ $(function() {
             phone_number: $("#phone").val().trim(),
             email: $("#email").val().trim(),
             instagram:$("#insta").val().trim(),
+            profile_pic: profile_pic,
         };
         console.log(newPromoter);
         // Send the POST request.
@@ -71,14 +74,10 @@ $(function() {
 });
 
   $('#upload_widget').cloudinary_upload_widget({ cloudName: "gsafl", uploadPreset: "m48qyart", sources: [ 'local', 'url', 'instagram']},(error, result) => {
-    if (result && result.event === "success") {
-      result = {
-        event: "upload-added",
-        info: {
-          
-          file: {},
-          publicId: "public-id" }
-        
-    };console.log(result)
+    if (result.event === "success") { //if (result && result.event === "success")
+    console.log(result)
+    profile_pic = result.info.url
+    };
+    console.log(`pic url ${profile_pic}`)
     }
-  });
+  );

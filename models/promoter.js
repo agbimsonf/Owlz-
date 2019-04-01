@@ -45,6 +45,11 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.TEXT,
         len: [1,50]
       },
+      profile_pic: {
+        type: DataTypes.TEXT,
+        defaultValue: '/assets/images/profile.png',
+        len: [1,200]
+      },
     });
     Promoter.associate = function(models) {
         Promoter.hasMany(models.Lead, {
