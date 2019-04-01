@@ -42,7 +42,8 @@ module.exports = function(app) {
       languages:req.body.language,
       phone_number: req.body.phone_number,
       email: req.body.email,
-      instagram:req.body.instagram
+      instagram:req.body.instagram,
+      profile_pic: req.body.profile_pic,
   },{
       where:{
         id: req.body.id
