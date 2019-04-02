@@ -5,6 +5,7 @@ html {
 }
 
 body {
+   
     min-height: 100%;
     max-width: 100%;
     margin: 0;
@@ -85,64 +86,35 @@ a:visited{
 #where{
     border-radius: 25px;
 }
-  
-/*   
-.slogan .letter {
-    display: inline-block;
-    line-height: 1em;
-}  */
 
 header {
 	background-image: url("../images/miami_bw.jpg");
-    height: 430px;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* .btn {
-    color: white;
-    font-weight: 500;
-    background-color:black;
-} */
-/* 
-.input {
-    padding-top: 140px;
-} */
+header img {
+    height: 100%;
 
-h1 h2 h3 h4 h5 {
+}
+
+h1, h2, h3, h4, h5 {
     letter-spacing: 0.1em;
-}
-#carousel {
-    margin-bottom: 80px;
 }
 
 .img-fluid {
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-}
-
-.img-fluid:hover {
-    
+    height: 250px !important;
+    width: 400px !important;
 }
 
 .labels {
-    /* position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: max-content;
-    height: max-content;
-    font-weight: 900;*/
-    font-size: 28px; 
-    color: black;
+    font-size: 36px; 
+    color: rgb(68, 3, 52);
     text-shadow: 1px 1px 2px rgb(165, 162, 164);
     font-weight: 500px;
+    font-family: 'Pacifico', cursive;
 }
-
-/* .labels {
-    font-weight: 900;
-} */
 
 .social {
     width: 60px;
@@ -151,38 +123,25 @@ h1 h2 h3 h4 h5 {
     margin-bottom: 50px;
 }
 
-
-/* input{
-    border-radius: 50px;
-    } */
-
-/* #submitButton {
-    border-radius: 50px;
-} */
-
-input.empty {
-    /* 
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: inherit; */
-  padding-left: 15px;
-  font-size: 20px;
-  line-height:40px;
-  width: 250px;
-  border:30px black;
-  border-radius: 500px;
-  font-family: FontAwesome;
-  margin-top: 140px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 300px;
+input.empty {  
+    padding-left: 15px;
+    font-size: 20px;
+    line-height:40px;
+    width: 250px;
+    border:30px black;
+    border-radius: 500px;
+    font-family: FontAwesome;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 200px;
 }
 
-.purple {
+.miami{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    height: 420px;
+    width:515px;
 }
 
 .yacht {
@@ -193,7 +152,7 @@ input.empty {
     height: 400px;
 }
 
-.purple:hover {
+.miami:hover {
     opacity: 0.7;
 }
 
@@ -211,6 +170,7 @@ h3 {
     margin-right: auto;
     background-color: black;
     color: white;
+    height: 45px;
 }
 
 .who  {
@@ -219,6 +179,7 @@ h3 {
     color: white;
     margin-left: auto;
     margin-right: auto;
+    height: 45px;
 }
 
 /* .background {
@@ -266,16 +227,6 @@ hr.style-eight:after {
 
 p { margin:0 }
 
-/* .register {
-    background-image: url("../images/stars.jpeg");
-    background-size: contain;
-} */
-
-/* .label {
-    padding: 5px;
-    margin-bottom: 200px;
-} */
-
 .btn {
     width: 120px;
 }
@@ -314,7 +265,6 @@ p { margin:0 }
 }
 
 .form-signin .btn {
-    border-radius: 5rem;
     letter-spacing: .1rem;
     padding: 8px;
     transition: all 0.2s;
@@ -327,12 +277,10 @@ p { margin:0 }
 
 .form-label-group input {
     height: auto;
-    border-radius: 2rem;
 }
 
 option {
     height: auto;
-    border-radius: 2rem;
 }
 
 .form-label-group>input,
@@ -351,7 +299,6 @@ option {
     line-height: 1.5;
     color: #495057;
     border: 1px solid transparent;
-    border-radius: .25rem;
     transition: all .1s ease-in-out;
 }
 
@@ -386,83 +333,19 @@ color: transparent;
     font-size: 12px;
     color: #777;
 }
-  
- @media (min-width: 768px) {
 
-    /* show 3 items */
-    .carouselPrograms .carousel-inner .active,
-    .carouselPrograms .carousel-inner .active + .carousel-item,
-    .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
-        display: block;
-    }
-
-    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-        transition: none;
-    }
-
-    .carouselPrograms .carousel-inner .carousel-item-next,
-    .carouselPrograms .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-    .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.333%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* left or forward direction */
-    .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
-    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    /* farthest right hidden item must be abso position for animations */
-    .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* right or prev direction */
-    .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-} 
+.cloudinary-button {
+    background-color: rgb(224, 220, 220) !important;
+    color: black !important;
+}
 
 .styled-select {
     background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 100% .50;
     height: 50px;
     overflow: hidden;
     width: 268px;
-    border-radius: 25px!important;
-    -webkit-border-radius: 25px!important;
-    -moz-border-radius: 25px!important;
-    
-}
-
-.rounded{
-    border-radius: 25px!important;
+    -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
 }
 
 .styled-select select {
@@ -472,9 +355,8 @@ color: transparent;
     height: 50px;
     padding: 5px; 
     width: 268px;
-    border-radius: 25px!important;
-    -webkit-border-radius: 25px!important;
-    -moz-border-radius: 25px!important;
+    -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
 }
 
  .black{
@@ -488,7 +370,22 @@ color: transparent;
     color: #000;    
 }
 
-/* gallery carousel */
+.gallery {
+    max-width: 1200px !important;
+    margin-left: 40px !important;
+    padding-right: 0px !important;
+}
 
-  /* end of gallery carousel */
-  
+.experienceVIP {
+    background-color: black;
+    color: white; 
+    width: 300px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.owlz {
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif !important;
+}

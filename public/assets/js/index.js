@@ -1,6 +1,7 @@
-$("#where").on("click", function(event) {
-    // Make sure to preventDefault on a submit event.
-    event.preventDefault();
+$("#city").keypress(function(event) {
+    if (event.which == 13 ) {
+        event.preventDefault();
+    
        var search = $("#city").val().trim();
        var city = search.split(",",1)
        console.log(city)
@@ -12,6 +13,7 @@ $("#where").on("click", function(event) {
         console.log(data);
         window.location.href = `listPromoter/${city}`
         }
-    );
+    ); 
+    }
 });
 
