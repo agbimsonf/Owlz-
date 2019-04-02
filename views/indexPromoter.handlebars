@@ -148,12 +148,36 @@
         </form>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn-sm btn-danger" data-toggle="modal" data-target="#deleteModal" data-dismiss="modal">Delete account</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="updatePromoter btn-lg btn-dark" type="button" data-id="{{promoter.id}}">Save changes</button>
+        <button class="updatePromoter btn btn-dark" style="width:150px"type="button" data-id="{{promoter.id}}">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Delete Account Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">DELETE YOUR ACCOUNT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <span>Are you sure you want to delete your account?</span>
+        <span>This action cannot be undone</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="deletePromoter" class="btn-sm btn-danger" data-id="{{promoter.id}}" data-dismiss="modal">CONFIRM DELETE ACCOUNT</button>
+        <button type="button" class="btn-sm btn-secondary" data-dismiss="modal">KEEP ACCOUNT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 {{!-- leads --}}
 <h2 class="text-center who">leads</h2>

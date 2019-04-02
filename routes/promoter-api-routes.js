@@ -75,5 +75,16 @@ module.exports = function(app) {
       });
 
   });
+
+  // DELETE route for deleting promoters
+  app.delete("/api/promoters/:id", function(req, res) {
+    db.Promoter.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbPromoter) {
+      res.json(dbPromoter);
+    });
+  });
 };
 
