@@ -1,5 +1,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 var profile_pic = "";
+if(profile_pic===""){
+  profile_pic="/assets/images/profile.png"
+}
 
 $(function() {
     $("#CreatePromoter").on("click", function(event) {
@@ -69,6 +72,22 @@ $(function() {
             location.reload();
           }
         );
+
+    });
+
+    $("#deletePromoter").on("click",function(event){
+      event.preventDefault();
+      var id = $(this).data("id");
+
+      $.ajax("/api/promoters/"+id, {
+        type: "DELETE",
+      }).then(
+        function(dbPromoter) {
+          alert("YOU ACCOUNT HAS BEEN PERMANENTLY DELETED")
+          window.location.href = `/`;
+        }
+      );
+
 
     });
 });
