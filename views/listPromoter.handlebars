@@ -66,7 +66,6 @@
                                     <img src="{{this.profile_pic}}" alt="profile photo" class="profilePhoto">
                                     <br>
                                     <br>
-                                    <h5>email: {{this.email}}</h5>
                                     <h5>languages: {{this.languages}}</h5>
                                     <a href="https://www.instagram.com/{{this.instagram}}"><i class="fab fa-instagram fa-2x"></i></a>
                                     {{!-- <i class="fab fa-twitter-square fa-2x"></i> --}}
@@ -74,24 +73,21 @@
                             <div class="col-9">
                                 <h3 class="card-title">{{this.handle}}</h3>
                                 <h5>city: {{this.city}} </h5>
-                                <h5>name: {{this.first_name}} {{this.last_name}}</h5>
                                 <h5>about: </h5> 
                                 <p>{{this.descriptions}}</p>
                                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal{{this.id}}">
                                   Contact Me
                                 </button>
                             </div>
-                          
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br>
     <hr class="style-eight">
-  
-        <br>
-        <br>
+    <br>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal{{this.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

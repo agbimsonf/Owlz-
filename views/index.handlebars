@@ -28,106 +28,75 @@
         </div>
       </li>
     </ul>
-    <h3 class="slogan">stay connected</h3>
+    <h3 class="slogan animated slideInRight">stay connected</h3>
   </div>
 </nav>
 <!-- end of navbar -->
 
 <!-- form for user search input with banner -->
 <header class="jumbotron text-center">
-    <form role="form ">
+    <form role="form">
         <div class="form-group">
-          <input type="text" class="form-control empty fa" id="city" placeholder="{{!-- &#xF002; --}} city, state" />
-          <button id="where" class="btn btn-dark" type="submit">Search</button>
+          <input type="text" class="form-control empty fa" id="city" placeholder="&#xF002; city, state" />
+          {{!-- <button id="where" class="btn btn-dark" type="submit">Search</button> --}}
         </div>
     </form>
     </header>
     <br>
-    <h2 class="text-center">experience VIP</h2>
+    <h2 class="text-center experienceVIP animated slideInUp">experience VIP</h2>
     <br>
+    <br
 <!-- end of user search inout banner -->
 
-
-{{!-- <!-- gallery carousel  -->
-<div class="container-fluid">
-  <div class="col-md-12">
-    <div id="carousel" class="carouselPrograms carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner row w-100 mx-auto" role="listbox">
-            <div class="carousel-item col-md-4 active">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 1" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="/assets/images/artbasel.jpg" alt="slide 1">
-                    </a><p class="text-center labels">art basel</p>
-                  </div>
-                </div>
+<!-- gallery carousell -->
+<div class="container gallery text-center">
+    <div id="carousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner " role="listbox">
+            <div class="carousel-item row active">
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/events/art.jpg"><p class="labels">art</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/events/fashion.jpg"><p class="labels">fashion</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/events/sporting.jpg"><p class="labels">sporting</p></div>
             </div>
-            <div class="carousel-item col-md-4 active">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 3" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="/assets/images/eleven.jpg" alt="slide 2">
-                    </a><p class="text-center labels">eleven</p>
-                  </div>
-                </div>
+            <div class="carousel-item row ">
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/lifestyle/cars.jpg"><p class="labels">cars</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/lifestyle/condo.jpg"><p class="labels">condos</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/lifestyle/yacht.jpg"><p class="labels">yachts</p></div>
             </div>
-            <div class="carousel-item col-md-4 active">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 4" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="/assets/images/music.jpg" alt="slide 3">
-                    </a><p class="text-center labels">concerts</p>
-                  </div>
-                </div>
+              <div class="carousel-item row ">
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/nightlife/bar-bevy.jpg"><p class="labels">bevy</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/nightlife/liv.jpg"><p class="labels">liv</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/nightlife/story.jpg"><p class="labels">story</p></div>
             </div>
-            <div class="carousel-item col-md-4 ">
-                <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 5" class="thumb">
-                     <img class="img-fluid mx-auto d-block" src="/assets/images/story.jpg" alt="slide 4">
-                    </a><p class="text-center labels">story</p>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4 ">
-              <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 6" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="/assets/images/heat.jpg" alt="slide 5">
-                    </a><p class="text-center labels">games</p>
-                  </div>
-                </div>
-            </div>
-            <div class="carousel-item col-md-4 ">
-               <div class="panel panel-default">
-                  <div class="panel-thumbnail">
-                    <a href="#" title="image 7" class="thumb">
-                      <img class="img-fluid mx-auto d-block" src="/assets/images/miami_skyline_display.jpg" alt="slide 6">
-                    </a><p class="text-center labels">parties</p>
-                  </div>
-                </div>
+            <div class="carousel-item row ">
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/restaurants/komodo.jpg"><p class="labels">comodo</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/restaurants/planta.jpg"><p class="labels">planta</p></div>
+                <div class="col-md-4 col-sm-12 float-left"><img class="img-fluid" src="/assets/images/restaurants/swan.jpg"><p class="labels">swan</p></div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next text-faded" href="#carousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
-    </div>
 </div>
-<!-- end of gallery carousel --> --}}
+<br>
+<br>
+<!-- end of gallery carousel --> 
+
 
 <!-- social media links-->
-<div class="text-center social-area">
+<div class="social-area text-center background">
+  <br>
     <h5>folow us</h5>
         <a href="#" target="_blank"><img src="/assets/images/facebook.png" alt="facebook" class="social"></a>
         <a href="#" target="_blank"><img src="/assets/images/instagram.png" alt="instagram" class="social"></a>
       </div>
     </div>
+  </div>
  <!-- end of social media links  -->
 
 <!-- footer-->
