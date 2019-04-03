@@ -137,6 +137,7 @@ input.empty {
     margin-left: auto;
     margin-right: auto;
     font-weight: 200px;
+    text-rendering: optimizeLegibility;
 }
 
 .miami{
